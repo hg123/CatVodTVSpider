@@ -910,7 +910,7 @@
     "wasu",
     "bilibili"
   ],
-  "spider": "https://www.sharerw.com/custom_spider.jar",
+  "spider": "https://raw.githubusercontent.com/hg123/CatVodTVSpider/main/jar/custom_spider.jar",
   "parses": [
     {
       "name": "暮光解析",
