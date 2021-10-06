@@ -46,9 +46,9 @@ public class Aidi extends Spider {
      */
     private JSONObject filterConfig;
 
-    private Pattern regexCategory = Pattern.compile("/v/(\\w+).html");
-    private Pattern regexVid = Pattern.compile("/movie/(\\w+).html");
-    private Pattern regexPlay = Pattern.compile("\\S+/play/(\\w+)-(\\d+)-(\\d+).html");
+    private Pattern regexCategory = Pattern.compile("/v/(\\d+).html");
+    private Pattern regexVid = Pattern.compile("/movie/(\\d+).html");
+    private Pattern regexPlay = Pattern.compile("/play/(\\d+)-(\\d+)-(\\d+).html");
     private Pattern regexPage = Pattern.compile("/show/(\\S+).html");
 
     @Override
