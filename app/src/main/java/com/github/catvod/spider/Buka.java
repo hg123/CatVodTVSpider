@@ -46,9 +46,9 @@ public class Buka extends Spider {
      */
     private JSONObject filterConfig;
 
-    private Pattern regexCategory = Pattern.compile("/vodtype/(\\w+)/");
-    private Pattern regexVid = Pattern.compile("/voddetail/(\\w+)/");
-    private Pattern regexPlay = Pattern.compile("/vodplay/(\\w+)-(\\d+)-(\\d+)/");
+    private Pattern regexCategory = Pattern.compile("/vodtype/(\\d+)/");
+    private Pattern regexVid = Pattern.compile("/voddetail/(\\d+)/");
+    private Pattern regexPlay = Pattern.compile("/vodplay/(\\d+)-(\\d+)-(\\d+)/");
     private Pattern regexPage = Pattern.compile("/vodshow/(\\S+)/");
 
     @Override
