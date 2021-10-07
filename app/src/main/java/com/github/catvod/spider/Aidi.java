@@ -96,15 +96,11 @@ public class Aidi extends Spider {
             Elements elements = doc.select("ul.nav_list > li a");
             JSONArray classes = new JSONArray();
             for (Element ele : elements) {
-                String name = ele.select("span").text();
-                if (name.equals("樱花动漫")) {
-                    name = "动漫";
-                }
+                String name = ele.text();
                 boolean show = name.equals("电影") ||
                         name.equals("连续剧") ||
-                        name.equals("动漫") ||
-                        name.equals("纪录片") ||
-                        name.equals("综艺");
+                        name.equals("综艺") ||
+                        name.equals("樱花动漫");
                 if (show) {
                     Matcher mather = regexCategory.matcher(ele.attr("href"));
                     if (!mather.find())
