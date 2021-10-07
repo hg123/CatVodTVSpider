@@ -28,7 +28,7 @@
 },
 {
   "key": "csp_EPang",
-  "name": "阿房影视",
+  "name": "阿房影视(已废弃)",
   "type": 3,
   "api": "csp_EPang",
   "searchable": 1,
@@ -67,6 +67,24 @@
   "name": "影视工厂",
   "type": 3,
   "api": "csp_Ysgc",
+  "searchable": 1,
+  "quickSearch": 0,
+  "filterable": 1
+},
+{
+  "key": "csp_N0ys",
+  "name": "90影视",
+  "type": 3,
+  "api": "csp_N0ys",
+  "searchable": 1,
+  "quickSearch": 0,
+  "filterable": 0
+},
+{
+  "key": "csp_Ubo",
+  "name": "U播影视",
+  "type": 3,
+  "api": "csp_Ubo",
   "searchable": 1,
   "quickSearch": 0,
   "filterable": 1
