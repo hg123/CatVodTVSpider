@@ -366,7 +366,7 @@ public class N0ys extends Spider {
     public String playerContent(String flag, String id, List<String> vipFlags) {
         try {
             // 播放页 url
-            String url = "http://98bbw.com/play/" + id + ".html";
+            String url = "http://1090ys2.com/play/" + id + ".html";
             SpiderUrl su = new SpiderUrl(url, getHeaders(url));
             SpiderReqResult srr = SpiderReq.get(su);
             Document doc = Jsoup.parse(srr.content);
