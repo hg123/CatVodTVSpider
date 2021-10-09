@@ -4,7 +4,7 @@
 思维没有边界 一切皆有可能
 ```
 
-本工程最终食用需配合 猫影视TV新版（一下简称为软件） **v2.0.0**及以上版本。[**下载**](https://wwi.lanzoui.com/iy7W1ulutpa) 代号：**miao**
+本工程最终食用需配合 猫影视TV新版（一下简称为软件） **v2.0.0**及以上版本。[**下载**](https://wwi.lanzoui.com/izRMJv45llc) 代号：**miao**
 
 ![logo](app/src/main/res/drawable-xhdpi/app_icon.png)
 
@@ -39,6 +39,25 @@
     "searchable": 1,
     "quickSearch": 0,
     "filterable": 1
+}
+```
+
+Json解析扩展（需v2.0.2及以上版本）
+
+通过jar包可以实现json解析并发、轮询等相关功能，**参与并发和轮询的json解析地址，默认为解析地址列表中的所有json解析（即type=1）**。
+
+在自定义json中的`parse`里加入相应的解析配置（type=2）即可启用。**调用扩展类的名称配置在`parse`的`url`字段里，例如扩展类`JsonParallel`的json配置`url`字段值为`Parallel`**。如下：
+
+```json
+{
+    "name": "Json并发",
+    "type": 2,
+    "url": "Parallel"
+},
+{
+    "name": "Json轮询",
+    "type": 2,
+    "url": "Sequence"
 }
 ```
 
