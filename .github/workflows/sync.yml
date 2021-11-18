@@ -13,5 +13,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }} # 这个 token action 会默认配置, 这里只需这样写就行
           owner: catvod # fork 上游项目 owner
-          head: main2 # fork 上游项目需要同步的分支
+          head: master # fork 上游项目需要同步的分支
           base: main2 # 需要同步到本项目的目标分支
