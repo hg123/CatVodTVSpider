@@ -9,7 +9,7 @@ jobs:
   repo-sync:
     runs-on: ubuntu-latest
     steps:
-      - uses: tgymnich/fork-sync@v1.2
+      - uses: tgymnich/fork-sync@v1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }} # 这个 token action 会默认配置, 这里只需这样写就行
           owner: catvod # fork 上游项目 owner
