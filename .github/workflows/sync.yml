@@ -15,5 +15,5 @@ jobs:
           owner: catvod
           github_token: ${{ secrets.GITHUB_TOKEN }}
           head: master
-          base: production
+          base: main
           
