@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: tgymnich/fork-sync@v1.3
+      - uses: tgymnich/fork-sync@v1.6
         with:
           owner: catvod
           github_token: ${{ secrets.GITHUB_TOKEN }}
