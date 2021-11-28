@@ -1,11 +1,10 @@
 name: Update Fork
-
 on:
   push:
-    branches: master
+    branches: 
+     -master
   schedule:
-    - cron: 0/5 * * * *
-    # 每隔12小时
+    - cron: 0/5 * * * *    # 每隔12小时
 jobs:
   update_fork:
     runs-on: ubuntu-latest
