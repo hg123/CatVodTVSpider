@@ -1,21 +1,18 @@
-name: Sync
+# .github/workflows/sync.yml
+name: Sync Fork
+
 on:
-  push:
-    branches:
-      -master
+  push: # push 时触发, 主要是为了测试配置有没有问题
   schedule:
-    - cron: 0/5 * * * *
-    # 每隔12小时
+    - cron: '0 * * * *' # 每小时 0分触发, 对于一些更新不那么频繁的项目可以设置为每天一次, 低碳一点
 jobs:
-  update_fork:
+  repo-sync:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: TobKed/github-forks-sync-action@master
+      - uses: TG908/fork-sync@v1.6
         with:
-          github_token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }} # 令牌
-          upstream_repository: catvod/CatVodTVSpider  # 上游仓库
-          target_repository: hg123/CatVodTVSpider  # 你要推送的仓库
-          upstream_branch: master  # 默认是拉取上游仓库的master分支
-          target_branch: main  # 默认推送到你的仓库master分支
-          force: true  # 是否强制推送
-          tags: true  # 确定是否使用-tags
+          github_token: ${{ secrets.HG }}
+          owner: catvod
+          head: master
+          base: main
