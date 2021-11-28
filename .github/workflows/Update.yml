@@ -1,17 +1,17 @@
-name: Update Fork
 on:
   push:
-    branches: 
-     -master
+    branches:
+      -master
   schedule:
-    - cron: 0/5 * * * *    # 每隔12小时
+    - cron: 0 */12 * * *
+    # 每隔12小时
 jobs:
-  update_fork:
+  update_external_airflow_fork:
     runs-on: ubuntu-latest
     steps:
       - uses: TobKed/github-forks-sync-action@master
         with:
-          github_token: ${{ secrets.HG }} # 令牌
+          github_token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }} # 令牌
           upstream_repository: catvod/CatVodTVSpider  # 上游仓库
           target_repository: hg123/CatVodTVSpider  # 你要推送的仓库
           upstream_branch: master  # 默认是拉取上游仓库的master分支
