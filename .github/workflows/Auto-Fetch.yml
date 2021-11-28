@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: namseyeder99/SICK@master
         with:
-          github_token: ${{ secrets.GITEE_TOKEN_P }} # 令牌
+          github_token: ${{ secrets.GITHUB_TOKEN }} # 令牌
           upstream_repository: catvod/CatVodTVSpider  # 上游仓库
           target_repository: hg123/CatVodTVSpider  # 你要推送的仓库
           upstream_branch: master  # 默认是拉取上游仓库的master分支
