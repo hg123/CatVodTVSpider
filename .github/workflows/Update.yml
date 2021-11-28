@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: TG908/fork-sync@v1.6
+      - uses: TG908/fork-sync@v1.3
         with:
           token: ${{ secrets.HG }}
           owner: catvod
