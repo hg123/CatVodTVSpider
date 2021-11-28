@@ -7,7 +7,7 @@ on:
     - cron: 0/5 * * * *
     # 每隔12小时
 jobs:
-  update_external_airflow_fork:
+  update_fork:
     runs-on: ubuntu-latest
     steps:
       - uses: TobKed/github-forks-sync-action@master
