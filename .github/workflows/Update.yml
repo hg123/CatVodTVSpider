@@ -1,4 +1,5 @@
-name: update_fork
+name: Update Fork
+
 on:
   push:
     branches:
